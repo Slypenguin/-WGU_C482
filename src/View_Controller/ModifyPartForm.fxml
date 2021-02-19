@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyPartController">
+   <children>
+      <Label layoutX="49.0" layoutY="39.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="ModInhouse" layoutX="233.0" layoutY="41.0" mnemonicParsing="false" onAction="#InhouseOnClick" text="In-House" />
+      <RadioButton fx:id="ModOutsourced" layoutX="395.0" layoutY="41.0" mnemonicParsing="false" onAction="#OutsourcedOnClick" text="Outsourced" />
+      <Label layoutX="72.0" layoutY="121.0" text="ID" />
+      <Label layoutX="65.0" layoutY="162.0" text="Name" />
+      <Label layoutX="70.0" layoutY="206.0" text="Inv" />
+      <Label layoutX="53.0" layoutY="243.0" text="Price/Cost" />
+      <Label layoutX="66.0" layoutY="289.0" text="Max" />
+      <Label layoutX="321.0" layoutY="289.0" text="Min" />
+      <Label fx:id="RadioLabel" layoutX="34.0" layoutY="331.0" prefHeight="17.0" prefWidth="101.0" />
+      <TextField fx:id="ModPartID" layoutX="151.0" layoutY="117.0" />
+      <TextField fx:id="ModPartName" layoutX="151.0" layoutY="158.0" />
+      <TextField fx:id="ModPartInv" layoutX="151.0" layoutY="202.0" />
+      <TextField fx:id="ModPartPrice" layoutX="151.0" layoutY="239.0" />
+      <TextField fx:id="ModPartMax" layoutX="151.0" layoutY="285.0" />
+      <TextField fx:id="ModPartMachID" layoutX="151.0" layoutY="327.0" />
+      <TextField fx:id="ModPartMin" layoutX="362.0" layoutY="285.0" />
+      <Button fx:id="ModifyPartSaveButton" layoutX="316.0" layoutY="395.0" mnemonicParsing="false" onAction="#ModifySaveOnClick" text="Save" />
+      <Button fx:id="ModifyPartCancelButton" layoutX="385.0" layoutY="395.0" mnemonicParsing="false" onAction="#ModifyCancelOnClick" text="Cancel" />
+   </children>
+</AnchorPane>
